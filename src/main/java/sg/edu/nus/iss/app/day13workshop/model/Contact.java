@@ -57,15 +57,15 @@ public class Contact implements Serializable {
     }
 
     /**
-     * Creates a new Contact with the specified name, email, and phone number.
+     * Creates a new Contact with the specified name, email, phone number, and date of birth.
      * The ID is generated randomly.
      *
      * @param name the name of the contact
      * @param email the email address of the contact
      * @param phoneNumber the phone number of the contact
+     * @param dateOfBirth the date of birth of the contact
      */
-    public Contact(String name, String email, String phoneNumber) {
-        // Generate a random ID for the new contact
+    public Contact(String name, String email, String phoneNumber, LocalDate dateOfBirth) {
         this.id = this.generateId(8);
         this.name = name;
         this.email = email;
@@ -73,18 +73,20 @@ public class Contact implements Serializable {
     }
 
     /**
-     * Creates a new Contact with the specified ID, name, email, and phone number.
+     * Creates a new Contact with the specified ID, name, email, phone number, and date of birth.
      *
      * @param id the ID of the contact
      * @param name the name of the contact
      * @param email the email address of the contact
      * @param phoneNumber the phone number of the contact
+     * @param dateOfBirth the date of birth of the contact
      */
-    public Contact(String id, String name, String email, String phoneNumber) {
+    public Contact(String id, String name, String email, String phoneNumber, LocalDate dateOfBirth) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.dateOfBirth = dateOfBirth;
     }
 
     // Methods

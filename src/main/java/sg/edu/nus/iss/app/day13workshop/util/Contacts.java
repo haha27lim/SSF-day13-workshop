@@ -63,7 +63,7 @@ public class Contacts {
 
         // Add the saved contact to the model
         model.addAttribute("contact", new Contact(ctc.getId(), ctc.getName(),
-                ctc.getEmail(), ctc.getPhoneNumber()));
+                ctc.getEmail(), ctc.getPhoneNumber(), ctc.getDateOfBirth()));
     }
 
     /**
